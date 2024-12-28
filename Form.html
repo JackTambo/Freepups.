@@ -15,12 +15,15 @@
       height: 100vh;
       margin: 0;
     }
+    .container {
+      text-align: center;
+    }
     form {
       background: #222;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      width: 300px;
+      width: 300px; /* Adjust the width of the form */
     }
     label {
       display: block;
@@ -29,7 +32,7 @@
     }
     input[type="email"],
     textarea {
-      width: 100%;
+      width: calc(100% - 20px); /* Adjust width to fit better */
       padding: 10px;
       margin-bottom: 10px;
       border: 1px solid #444;
@@ -48,9 +51,6 @@
     }
     button:hover {
       background-color: #0056b3;
-    }
-    .container {
-      text-align: center;
     }
     a {
       color: #fff;
@@ -75,7 +75,7 @@
       </label>
       <label>
         Your message:
-        <textarea name="message" required></textarea>
+        <textarea name="message" required rows="4"></textarea>
       </label>
       <button type="submit">Send</button>
     </form>
