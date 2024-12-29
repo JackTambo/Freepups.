@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Homepage with Background Image</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Eagle Lake', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Change text color as needed */
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FmZXxlbnwwfDB8MHx8fDI%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+       
+
+        h1 {
+            font-size: 3.5em; /* Adjust size as needed */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+        }
+
+        p {
+            font-size: 1em; /* Adjust size as needed */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Cafe</h1>
-        <nav>
-            <ul>
-                <li><a href="example1.html">Home</a></li>
-                <li><a href="example2.html">About Us</a></li>
-                <li><a href="example3.html">Services</a></li>
-                <li><a href="example4.html">Gallery</a></li>
-                <li><a href="example5.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cafe Interior" class="hero-image">
-            <h2>Your Cozy Corner for Coffee and More</h2>
-        </div>
-        <section>
-            <h3>About Our Cafe</h3>
-            <p>At our cafe, we believe in creating a warm and inviting atmosphere where you can relax and enjoy the best coffee in town. Our baristas are passionate about crafting the perfect cup, using only the finest beans sourced from sustainable farms.</p>
-            <p>Whether you're looking for a quick caffeine fix, a place to catch up with friends, or a cozy spot to work, our cafe is the perfect destination. We also offer a selection of delicious pastries and light meals to complement your drink.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Cafe. All rights reserved.</p>
-    </footer>
+    <div class="content">
+        <h1><i>Cafe</i></h1>
+    </div>
 </body>
 </html>
