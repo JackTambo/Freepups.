@@ -1,60 +1,77 @@
-<style>
-  body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  .container {
-    text-align: center;
-  }
-  form {
-    background: #222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    width: 300px; /* Adjust the width of the form */
-  }
-  label {
-    display: block;
-    margin-bottom: 5px; /* Reduced margin for a cleaner look */
-    font-weight: bold;
-    text-align: left; /* Align text to the left for better readability */
-  }
-  input[type="email"],
-  input[type="name"],
-  textarea {
-    width: calc(100% - 20px); /* Adjust width to fit better */
-    padding: 10px;
-    margin-bottom: 15px; /* Increased margin for better spacing */
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px; /* Slightly smaller font size for a cleaner look */
-  }
-  button,
-  a {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 16px; /* Consistent font size */
-    border-radius: 4px; /* Consistent border radius */
-    cursor: pointer; /* Pointer cursor for button */
-  }
-  button {
-    background-color: transparent; /* Make the button background transparent */
-  }
-  button:hover,
-  a:hover {
-    background-color: #fff; /* Change background on hover */
-    color: #000; /* Change text color on hover */
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <title>Basic Package Purchase Form</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    form {
+      border: 1px solid #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+    input[type="text"], input[type="email"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 5px 0 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+    }
+    input[type="submit"] {
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 20px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Purchase Basic Package</h1>
+    <form action="https://formspree.io/f/mgvvzarn" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="domain">Preferred Domain:</label>
+      <input type="text" id="domain" name="domain" required>
+
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message">
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
